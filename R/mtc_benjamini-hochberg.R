@@ -112,22 +112,22 @@ applyAndReportBH <- function(matrixData, outputFolderTemp, outputFile,
     allTestsCorrectedRmd(matrixData3, thresholdPVal, 
                          outputFile, outputFolderTemp)
     
-    cat('',        
-        '> Please cite these articles whenever using results from this software in a publication :',
-        '> ',
-        '> Method article :',
-        '> Benjamini, Y., & Hochberg, Y. (1995). ',
-        '> Controlling the false discovery rate: a practical and powerful approach to multiple testing. ',
-        '> Journal of the Royal Statistical Society. Series B (Methodological), 57(1), 289-300. ',
-        '> Retrieved from http://www.jstor.org/stable/10.2307/2346101',
-        '>',
-        '> Software article (`r version$version.string) :',
-        '> `r citation("base")$textVersion`',
-        '> ',
-        '',
-        '---------------------------------------------------------------------',
-        '',
-        sep="\n", file=outputFile, append=TRUE)        
+    # cat('',        
+    #     '> Please cite these articles whenever using results from this software in a publication :',
+    #     '> ',
+    #     '> Method article :',
+    #     '> Benjamini, Y., & Hochberg, Y. (1995). ',
+    #     '> Controlling the false discovery rate: a practical and powerful approach to multiple testing. ',
+    #     '> Journal of the Royal Statistical Society. Series B (Methodological), 57(1), 289-300. ',
+    #     '> Retrieved from http://www.jstor.org/stable/10.2307/2346101',
+    #     '>',
+    #     '> Software article (`r version$version.string) :',
+    #     '> `r citation("base")$textVersion`',
+    #     '> ',
+    #     '',
+    #     '---------------------------------------------------------------------',
+    #     '',
+    #     sep="\n", file=outputFile, append=TRUE)        
     
     return(matrixData3)
 }

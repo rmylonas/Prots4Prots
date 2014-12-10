@@ -47,3 +47,4 @@ Collate:
     'stt_t-test.R'
     'sum_all_summary_methods.R'
     'sum_summary_methods.R'
+    'flt_keep-sign.R'
